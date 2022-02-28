@@ -270,6 +270,7 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 344290115}
   Cam: {fileID: 519420031}
+  health: 0
 --- !u!1 &432523369
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +438,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.0349095
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

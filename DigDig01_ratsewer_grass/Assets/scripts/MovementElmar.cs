@@ -10,11 +10,12 @@ public class MovementElmar : MonoBehaviour
     public Rigidbody2D rb;
 
     public Camera Cam;
+    public int health;
 
 
-    void Start()
+    private void Start()
     {
-
+        health = 5;
     }
 
     void Update()
