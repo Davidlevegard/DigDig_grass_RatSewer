@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4293406050630133308}
   - component: {fileID: 4293406050630133309}
   m_Layer: 0
-  m_Name: bengt
+  m_Name: bengtEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

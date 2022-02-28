@@ -9,7 +9,7 @@ public class collisionController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         //om "enemyProjectile" coliderar med player går healthbaren ner med 1. 
-        if (collision.gameObject.tag == "enemyProjectile")
+        if (collision.gameObject.tag == "Beggie")
         {
             if (healthBar)
             {
