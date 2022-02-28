@@ -869,5 +869,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 911621375}
-  health: 0
-  startHealth: 0
+  health: 5
+  startHealth: 5

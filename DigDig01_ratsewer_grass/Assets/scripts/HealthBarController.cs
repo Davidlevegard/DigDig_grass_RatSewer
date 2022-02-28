@@ -18,12 +18,4 @@ public class HealthBarController : MonoBehaviour
         healthBar.fillAmount = health / startHealth;
     }
 
-    public void Update()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-
-        }
-    }
-
 }
