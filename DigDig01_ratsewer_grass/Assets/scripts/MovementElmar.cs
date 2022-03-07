@@ -29,9 +29,11 @@ public class MovementElmar : MonoBehaviour
     {
         rb.MovePosition(rb.position + noMov * moveSpeed * Time.fixedDeltaTime);
 
-        if(inputHorizontal > 0)
+        if (inputHorizontal > 0)
         {
             rb.AddForce(new Vector2(inputHorizontal * moveSpeed, 0f));
+
+
         }
     }
 }
