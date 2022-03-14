@@ -10,7 +10,7 @@ public class bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //script som gör att om en enemy blir träffad av bulletsen tar enemyn skada.
-        var enemy = collision.collider.GetComponent<EnemyPlayerBehaviour>();
+        var enemy = collision.collider.GetComponent<enemyPlayerBehaviour>();
         if (enemy)
         {
             enemy.Hit(1);

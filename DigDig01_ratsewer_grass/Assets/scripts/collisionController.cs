@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class collisionController : MonoBehaviour
 {
-    public HealthBarController healthBar;
+    public healthBarController healthBar;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {

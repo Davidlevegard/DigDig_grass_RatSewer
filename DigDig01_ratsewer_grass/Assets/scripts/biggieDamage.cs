@@ -21,11 +21,11 @@ public class biggieDamage : MonoBehaviour
         //gets destroyed. 
         if (collision.gameObject.tag == "Elmar")
         {
-            int newHealth = collision.gameObject.GetComponent<MovementElmar>().health;
+            int newHealth = collision.gameObject.GetComponent<movementElmar>().health;
             if (newHealth > 1)
             {
                 //om Newhealth är högre en 1 går siffran ner med 1 tills den når 0. 
-                collision.gameObject.GetComponent<MovementElmar>().health--;
+                collision.gameObject.GetComponent<movementElmar>().health--;
                 
             }
             else
