@@ -8,6 +8,7 @@ public class movementElmar : MonoBehaviour
     float inputHorizontal;
     float inputVerticale;
 
+
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
 
@@ -33,6 +34,5 @@ public class movementElmar : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + noMov * moveSpeed * Time.fixedDeltaTime);
-
     }
 }
