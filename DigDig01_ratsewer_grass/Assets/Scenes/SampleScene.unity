@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 1036777703}
   - component: {fileID: 1036777698}
   m_Layer: 0
-  m_Name: BiggieEnemy
+  m_Name: biggieEnemy
   m_TagString: Biggie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ GameObject:
   - component: {fileID: 1675993498}
   - component: {fileID: 1675993497}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: eventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

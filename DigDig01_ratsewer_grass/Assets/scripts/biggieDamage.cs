@@ -26,7 +26,6 @@ public class biggieDamage : MonoBehaviour
             {
                 //om Newhealth är högre en 1 går siffran ner med 1 tills den når 0. 
                 collision.gameObject.GetComponent<movementElmar>().health--;
-                
             }
             else
             {
