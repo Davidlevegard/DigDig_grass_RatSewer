@@ -15,16 +15,15 @@ public class SpriteChange : MonoBehaviour
     {
         if (Input.GetButtonDown("W"))
         {
-            this.GetComponent<SpriteRenderer>().sprite = FacingUs;
+            this.GetComponent<SpriteRenderer>().sprite = FacingAway;
         }
-
         if (Input.GetButtonDown("A"))
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingLeft;
         }
         if (Input.GetButtonDown("S"))
         {
-            this.GetComponent<SpriteRenderer>().sprite = FacingAway;
+            this.GetComponent<SpriteRenderer>().sprite = FacingUs;
         }
         if (Input.GetButtonDown("D"))
         {
