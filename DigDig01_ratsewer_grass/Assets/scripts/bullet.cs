@@ -16,9 +16,9 @@ public class bullet : MonoBehaviour
             var biggieEnemy = collision.collider.GetComponent<enemyPlayerBehaviour>();
         }
 
-        if (biggieEnemy)
+        if (enemy)
         {
-            biggieEnemy.Hit(1);
+            enemy.Hit(1);
         }
 
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
