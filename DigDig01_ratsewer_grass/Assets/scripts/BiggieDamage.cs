@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BiggieDamage : MonoBehaviour
+public class biggieDamage : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class BiggieDamage : MonoBehaviour
             int newHealth = collision.gameObject.GetComponent<MovementElmar>().health;
             if (newHealth > 1)
             {
-                //om Newhealth är jögre en 1 går siffran ner med 1 tills den når 0. 
+                //om Newhealth är högre en 1 går siffran ner med 1 tills den når 0. 
                 collision.gameObject.GetComponent<MovementElmar>().health--;
                 
             }

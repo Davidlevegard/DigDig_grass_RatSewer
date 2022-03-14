@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class shooting : MonoBehaviour
 {
 
     //here are all the variables for the bullet 
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public float bulletForce = 10f;
+    public float bulletForce = 20f;
     //public AudioSource ShootingSound;
     // Update is called once per frame
 

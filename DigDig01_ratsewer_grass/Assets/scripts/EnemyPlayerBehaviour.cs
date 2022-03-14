@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPlayerBehaviour : MonoBehaviour
+public class enemyPlayerBehaviour : MonoBehaviour
 {
     //variablar
     public float HitPoints;

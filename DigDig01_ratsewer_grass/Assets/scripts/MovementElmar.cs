@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementElmar : MonoBehaviour
+public class movementElmar : MonoBehaviour
 {
     Vector2 noMov;
     float inputHorizontal;
@@ -19,9 +19,6 @@ public class MovementElmar : MonoBehaviour
     public Sprite FacingAway;
     public Sprite FacingRight;
     public Sprite FacingLeft;
-
-
-
 
     private void Start()
     {

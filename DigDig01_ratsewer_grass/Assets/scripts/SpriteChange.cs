@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteChange : MonoBehaviour
+public class spriteChange : MonoBehaviour
 {
     public GameObject Player;
 
