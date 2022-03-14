@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovementElmar : MonoBehaviour
 {
     Vector2 noMov;
+    float inputHorizontal;
+    float inputVerticale;
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
@@ -26,5 +28,12 @@ public class MovementElmar : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + noMov * moveSpeed * Time.fixedDeltaTime);
+
+        if (inputHorizontal > 0)
+        {
+            rb.AddForce(new Vector2(inputHorizontal * moveSpeed, 0f));
+
+
+        }
     }
 }
