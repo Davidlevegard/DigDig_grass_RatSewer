@@ -19,7 +19,7 @@ public class biggieDamage : MonoBehaviour
     {
         //this script makes it so on impact the players health goes down "1" untill it hits 0 health whitch then makes it so the player
         //gets destroyed. 
-        if (collision.gameObject.tag == "Elmar")
+        if (collision.gameObject.tag == "elmar")
         {
             int newHealth = collision.gameObject.GetComponent<movementElmar>().health;
             if (newHealth > 1)
