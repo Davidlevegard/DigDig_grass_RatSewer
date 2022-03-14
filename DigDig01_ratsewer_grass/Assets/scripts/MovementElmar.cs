@@ -14,6 +14,14 @@ public class MovementElmar : MonoBehaviour
     public Camera Cam;
     public int health;
 
+    //sprites
+    public Sprite FacingUs;
+    public Sprite FacingAway;
+    public Sprite FacingRight;
+    public Sprite FacingLeft;
+
+
+
 
     private void Start()
     {
@@ -29,11 +37,5 @@ public class MovementElmar : MonoBehaviour
     {
         rb.MovePosition(rb.position + noMov * moveSpeed * Time.fixedDeltaTime);
 
-        if (inputHorizontal > 0)
-        {
-            rb.AddForce(new Vector2(inputHorizontal * moveSpeed, 0f));
-
-
-        }
     }
 }

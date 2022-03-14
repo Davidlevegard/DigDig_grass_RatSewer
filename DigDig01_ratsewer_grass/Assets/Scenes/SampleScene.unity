@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 344290115}
   - component: {fileID: 344290119}
   - component: {fileID: 344290120}
+  - component: {fileID: 344290121}
   m_Layer: 0
   m_Name: Elmar
   m_TagString: Elmar
@@ -272,6 +273,10 @@ MonoBehaviour:
   rb: {fileID: 344290115}
   Cam: {fileID: 519420031}
   health: 5
+  FacingUs: {fileID: -9138071092485213459, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingAway: {fileID: 5677601901325031096, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingRight: {fileID: -3224274196673818585, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingLeft: {fileID: -7265571436596009884, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
 --- !u!114 &344290120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +290,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 2116327233}
+--- !u!114 &344290121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344290114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadec1f56f8f93948bd103c9ee67eb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 344290114}
+  FacingUs: {fileID: -9138071092485213459, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingAway: {fileID: 5677601901325031096, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingRight: {fileID: -3224274196673818585, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
+  FacingLeft: {fileID: -7265571436596009884, guid: 2e105a9b36e65664a9dbf9fef73b8cb4, type: 3}
 --- !u!1 &432523369
 GameObject:
   m_ObjectHideFlags: 0
