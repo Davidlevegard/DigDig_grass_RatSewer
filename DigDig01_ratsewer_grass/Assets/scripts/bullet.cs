@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+
     public GameObject hitEffect;
 
 
@@ -11,11 +12,6 @@ public class bullet : MonoBehaviour
     {
         //script som gör att om en enemy blir träffad av bulletsen tar enemyn skada.
         var enemy = collision.collider.GetComponent<enemyPlayerBehaviour>();
-        if (enemy)
-        {
-            var biggieEnemy = collision.collider.GetComponent<enemyPlayerBehaviour>();
-        }
-
         if (enemy)
         {
             enemy.Hit(1);
