@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarController : MonoBehaviour
+public class healthBarController : MonoBehaviour
 {
     public Image healthBar;
     public float health;
     public float startHealth;
-
+    
     public void onTakeDamage(int damage)
     {
         //när "ontagedamage" triggas kommer Health vara lika med "health - damage" och sedan kommer detta health at vissas
@@ -17,5 +17,4 @@ public class HealthBarController : MonoBehaviour
         health = health - damage;
         healthBar.fillAmount = health / startHealth;
     }
-
 }

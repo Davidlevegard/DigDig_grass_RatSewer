@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class collisionController : MonoBehaviour
 {
-    public HealthBarController healthBar;
+    public healthBarController healthBar;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         //om "enemyProjectile" coliderar med player går healthbaren ner med 1. 
-        if (collision.gameObject.tag == "Beggie")
+        if (collision.gameObject.tag == "Biggie")
         {
             if (healthBar)
             {
@@ -17,13 +18,12 @@ public class collisionController : MonoBehaviour
             }
         }
         //om "Astroid" coliderar med player går healthbaren ner med 1. 
-        //else if (collision.gameObject.tag == "Astroid")
+        //else if (collision.gameObject.tag == "bengtProjectile")
         {
             //if (healthBar)
             {
                 //healthBar.onTakeDamage(1);
             }
         }
-
     }
 }
