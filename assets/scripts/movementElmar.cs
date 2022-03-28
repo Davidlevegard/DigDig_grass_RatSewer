@@ -23,7 +23,7 @@ public class movementElmar : MonoBehaviour
 
     private void Start()
     {
-        health = 5;
+        health = 10;
     }
 
     void Update()
