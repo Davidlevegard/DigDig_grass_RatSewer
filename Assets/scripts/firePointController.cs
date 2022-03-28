@@ -13,7 +13,7 @@ public class firePointController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("A"))
+        if (Input.GetButtonDown("D"))
         {
             flip();
         }

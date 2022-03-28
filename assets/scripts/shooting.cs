@@ -8,6 +8,7 @@ public class shooting : MonoBehaviour
     //here are all the variables for the bullet 
     public Transform firePoint;
     public GameObject bulletPrefab;
+    
 
     public float bulletForce = 15f;
     //public AudioSource ShootingSound;
@@ -25,16 +26,31 @@ public class shooting : MonoBehaviour
         {
             //ShootingSound.Play();
 
-            shoot();
+            shootright();
 
         }
-        void shoot()
+        void shootright()
         {
             //this code  spawns in the bullet and selcets the force of the bullet. 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
-            
+
+        }
+
+        void shootup()
+        {
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+
+        void shootleft()
+        {
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddRelativeForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         }
     }
 }

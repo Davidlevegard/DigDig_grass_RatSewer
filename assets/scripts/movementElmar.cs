@@ -15,11 +15,6 @@ public class movementElmar : MonoBehaviour
     public Camera Cam;
     public int health;
 
-    //sprites
-    public Sprite FacingUs;
-    public Sprite FacingAway;
-    public Sprite FacingRight;
-    public Sprite FacingLeft;
 
     private void Start()
     {
