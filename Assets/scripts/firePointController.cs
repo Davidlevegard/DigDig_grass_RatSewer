@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class firePointController : MonoBehaviour
 {
+    public GameObject elmar;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,10 +19,15 @@ public class firePointController : MonoBehaviour
         {
             flip();
         }
+
+        if (Input.GetButtonDown("A"))
+        {
+            flip();
+        }
     }
     private void flip()
     {
-
         transform.Rotate(0f, 180f, 0f);
     }
 }
+

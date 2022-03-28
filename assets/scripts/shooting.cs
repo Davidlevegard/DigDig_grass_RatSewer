@@ -9,8 +9,9 @@ public class shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     
+   
 
-    public float bulletForce = 15f;
+    //public float bulletForce = 15f;
     //public AudioSource ShootingSound;
     // Update is called once per frame
 
@@ -26,31 +27,20 @@ public class shooting : MonoBehaviour
         {
             //ShootingSound.Play();
 
-            shootright();
+            shoot();
 
         }
-        void shootright()
+        void shoot()
         {
             //this code  spawns in the bullet and selcets the force of the bullet. 
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
 
-        }
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); 
 
-        void shootup()
-        {
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        }
 
-        void shootleft()
-        {
+            //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            //Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            //rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
 
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddRelativeForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         }
     }
 }
