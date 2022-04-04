@@ -31,27 +31,30 @@ public class spriteChange : MonoBehaviour
         }
         if (Input.GetButtonDown("D"))
         {
-            if(FacingRight == false)
+            if (FacingRight == false)
             {
                 flip();
             }
-         
+
         }
 
         if (Input.GetButtonDown("A"))
         {
-            if(FacingLeft == false)
+            if (FacingLeft == false)
             {
-               flip();
+                flip();
             }
-            
+
         } 
 
     }
     private void flip()
     {
-        
-
+        transform.Rotate(0f, 180f, 0f);
+    }
+    private void moveFirePointLeft()
+    {
+        //this.transform.position = new Vector3(100f, 0f, 0f);*
         transform.Rotate(0f, 180f, 0f);
     }
 }
