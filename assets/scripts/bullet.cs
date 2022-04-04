@@ -10,7 +10,8 @@ public class bullet : MonoBehaviour
 
     private void Start()
     {
-        rb.velocity = transform.right * speed; 
+        rb.velocity = transform.right * speed;
+        Destroy(gameObject, 10f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

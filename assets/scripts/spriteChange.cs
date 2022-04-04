@@ -31,13 +31,21 @@ public class spriteChange : MonoBehaviour
         }
         if (Input.GetButtonDown("D"))
         {
-            flip();
+            if(FacingRight == false)
+            {
+                flip();
+            }
+         
         }
 
         if (Input.GetButtonDown("A"))
         {
-            flip();
-        }
+            if(FacingLeft == false)
+            {
+               flip();
+            }
+            
+        } 
 
     }
     private void flip()
