@@ -35,7 +35,8 @@ public class spriteChange : MonoBehaviour
             {
                 flip();
             }
-
+            flip();
+            
         }
 
         if (Input.GetButtonDown("A"))
@@ -44,7 +45,8 @@ public class spriteChange : MonoBehaviour
             {
                 flip();
             }
-
+            flip();
+            
         } 
 
     }
