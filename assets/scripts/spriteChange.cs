@@ -29,5 +29,22 @@ public class spriteChange : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingRight;
         }
+        if (Input.GetButtonDown("D"))
+        {
+            flip();
+        }
+
+        if (Input.GetButtonDown("A"))
+        {
+            flip();
+        }
+
+    }
+    private void flip()
+    {
+        
+
+        transform.Rotate(0f, 180f, 0f);
     }
 }
+

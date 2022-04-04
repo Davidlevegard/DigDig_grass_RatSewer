@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-
+    public float speed = 15f;
     public GameObject hitEffect;
-    
+    public Rigidbody2D rb;
 
+    private void Start()
+    {
+        rb.velocity = transform.right * speed; 
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,5 +26,4 @@ public class bullet : MonoBehaviour
         Destroy(effect, 0.2f);
         Destroy(gameObject);
     }
-
 }
