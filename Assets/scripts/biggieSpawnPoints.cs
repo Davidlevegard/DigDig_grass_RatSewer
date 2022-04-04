@@ -16,7 +16,7 @@ public class biggieSpawnPoints : MonoBehaviour
     void Start()
     {
         //med listan "spawned = new int[3]" gör jag så att det fins 3 stycken spawnpoints. 
-        spawned = new int[3];
+        spawned = new int[5];
         //det här scriptet visar hur lång tid det är mellan spawnsen. 
         //spawnStartTime = 2f;
         //spawnTime = 1f;
