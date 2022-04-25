@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class biggieDamage : MonoBehaviour
+
+public class HealthController : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -11,18 +11,10 @@ public class biggieDamage : MonoBehaviour
         if (collision.gameObject.tag == "Elmar")
         {
             int newHealth = collision.gameObject.GetComponent<movementElmar>().health;
-            if (newHealth > 1)
+            if (newHealth < 10)
             {
                 //om Newhealth är högre en 1 går siffran ner med 1 tills den når 0. 
-                collision.gameObject.GetComponent<movementElmar>().health--;
-            }
-            else
-            {
-                //om NewHealth är mindre en 1 förstörs objecktet och "gameOverScenen" vissas. 
-                Destroy(collision.gameObject);
-
-                SceneManager.LoadScene("GameOver screen");
-
+                newHealth = collision.gameObject.GetComponent<movementElmar>().health + 1;
             }
         }
     }
