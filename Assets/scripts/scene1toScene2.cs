@@ -22,7 +22,7 @@ public class scene1toScene2 : MonoBehaviour
         //gets destroyed. 
         if (collision.gameObject.tag == "Elmar")
         {
-            SceneManager.LoadScene("lvl_03-kopia");
+            SceneManager.LoadScene("lvl01");
         }
     }
 }

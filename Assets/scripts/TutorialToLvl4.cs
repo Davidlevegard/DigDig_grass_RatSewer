@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class level1toLvl2 : MonoBehaviour
+public class TutorialToLvl4 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class level1toLvl2 : MonoBehaviour
         //gets destroyed. 
         if (collision.gameObject.tag == "Elmar")
         {
-            SceneManager.LoadScene("lvl02");
+            SceneManager.LoadScene("lvl04");
         }
     }
 }
