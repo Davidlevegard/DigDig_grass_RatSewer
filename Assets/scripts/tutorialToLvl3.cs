@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class scene1toScene2 : MonoBehaviour
+public class tutorialToLvl3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -26,3 +26,4 @@ public class scene1toScene2 : MonoBehaviour
         }
     }
 }
+

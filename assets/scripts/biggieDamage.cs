@@ -4,17 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class biggieDamage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //this script makes it so on impact the players health goes down "1" untill it hits 0 health whitch then makes it so the player

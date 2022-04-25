@@ -17,6 +17,14 @@ public class collisionController : MonoBehaviour
                 healthBar.onTakeDamage(1);
             }
         }
+        if (collision.gameObject.tag == "Healing")
+        {
+            if (healthBar)
+            {
+                healthBar.onTakeHealing(1);
+            }
+        }
+
         //om "biggie" coliderar med player går healthbaren ner med 1. 
         //else if (collision.gameObject.tag == "bengtProjectile")
         {
