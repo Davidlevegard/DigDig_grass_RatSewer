@@ -9,15 +9,18 @@ EditorBuildSettings:
     path: Assets/scenes/sampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/scenes/lvl_01.unity
+    path: Assets/scenes/lvl01.unity
     guid: b62518a6377e107408fa85ad736dfaa9
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/lvl_022.unity
     guid: adce1b783d09f8c4a80be1de9d2adf71
   - enabled: 1
-    path: Assets/scenes/GameOver screen.unity
+    path: Assets/scenes/gameOverScreen.unity
     guid: 986dd62e4c1f47a46906df0991e3f114
   - enabled: 1
-    path: Assets/scenes/lvl_03-kopia.unity
+    path: Assets/scenes/lvl03.unity
     guid: 3068865398843ea459b999c7050056e7
+  - enabled: 1
+    path: Assets/scenes/lvl02.unity
+    guid: ce5cbc05eb5fd004fbbf2cdcd4129af5
   m_configObjects: {}

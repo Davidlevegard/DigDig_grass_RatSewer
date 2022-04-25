@@ -22,7 +22,7 @@ public class level1toLvl2 : MonoBehaviour
         //gets destroyed. 
         if (collision.gameObject.tag == "Elmar")
         {
-            SceneManager.LoadScene("lv022");
+            SceneManager.LoadScene("lvl02");
         }
     }
 }
