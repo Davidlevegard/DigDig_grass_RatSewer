@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class biggieDamage : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -31,7 +31,8 @@ public class biggieDamage : MonoBehaviour
             {
                 //om NewHealth är mindre en 1 förstörs objecktet och "gameOverScenen" vissas. 
                 Destroy(collision.gameObject);
-                //SceneManager.LoadScene("GameOverScene");
+
+                SceneManager.LoadScene("GameOver screen");
 
             }
         }

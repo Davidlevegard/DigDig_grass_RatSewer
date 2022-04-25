@@ -11,41 +11,52 @@ public class spriteChange : MonoBehaviour
     public Sprite FacingRight;
     public Sprite FacingLeft;
 
+    bool turnedLeft = false;
+
     void Update()
     {
         if (Input.GetButtonDown("W"))
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingAway;
         }
-        if (Input.GetButtonDown("A"))
+        /*if (Input.GetButtonDown("A"))
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingLeft;
-        }
-        if (Input.GetButtonDown("S"))
+        }*/
+        else if(Input.GetButtonDown("S"))
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingUs;
         }
-        if (Input.GetButtonDown("D"))
+        /*if (Input.GetButtonDown("D"))
         {
             this.GetComponent<SpriteRenderer>().sprite = FacingRight;
-        }
-        if (Input.GetButtonDown("D"))
+        }*/
+        else if (Input.GetButtonDown("D"))
         {
-            if (FacingRight == false)
+            this.GetComponent<SpriteRenderer>().sprite = FacingRight;
+            
+            if (turnedLeft == true)
             {
+
+                
                 flip();
+                turnedLeft = false;
             }
-            flip();
+            
             
         }
 
-        if (Input.GetButtonDown("A"))
+        else if (Input.GetButtonDown("A"))
         {
-            if (FacingLeft == false)
+            this.GetComponent<SpriteRenderer>().sprite = FacingRight;
+            if (turnedLeft == false)
             {
+                
+
                 flip();
+                turnedLeft = true;
             }
-            flip();
+            
             
         } 
 
