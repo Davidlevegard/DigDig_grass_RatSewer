@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/GameOver screen.unity
     guid: 986dd62e4c1f47a46906df0991e3f114
+  - enabled: 1
+    path: Assets/scenes/lvl_03-kopia.unity
+    guid: 3068865398843ea459b999c7050056e7
   m_configObjects: {}
