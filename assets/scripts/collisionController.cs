@@ -17,7 +17,7 @@ public class collisionController : MonoBehaviour
                 healthBar.onTakeDamage(1);
             }
         }
-        //om "Astroid" coliderar med player går healthbaren ner med 1. 
+        //om "biggie" coliderar med player går healthbaren ner med 1. 
         //else if (collision.gameObject.tag == "bengtProjectile")
         {
             //if (healthBar)
