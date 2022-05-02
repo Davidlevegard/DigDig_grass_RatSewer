@@ -21,7 +21,7 @@ public class biggieDamage : MonoBehaviour
                 //om NewHealth är mindre en 1 förstörs objecktet och "gameOverScenen" vissas. 
                 Destroy(collision.gameObject);
 
-                SceneManager.LoadScene("GameOver screen");
+                SceneManager.LoadScene("gameOverScreen");
 
             }
         }
